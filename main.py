@@ -1,3 +1,6 @@
+import os
+os.makedirs("processing", exist_ok=True)
+
 from PIL import Image, ImageDraw
 
 def process_gif(input_path, overlay_path, output_path, output_frame_delay=500, target_duration=3500):
